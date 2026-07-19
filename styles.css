@@ -522,6 +522,8 @@ a:hover { color: var(--blue-dark); }
 
 .form-msg { color: var(--blue); font-weight: 600; font-size: 14px; margin: 0; }
 
+.hp-field { display: none; }
+
 .contact-info {
   margin-top: 24px;
   display: flex;

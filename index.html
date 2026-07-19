@@ -262,11 +262,13 @@
     <h2 class="heading">Let's get your child smiling brighter.</h2>
   </div>
   <div class="contact-grid">
-    <form class="contact-form" id="contactForm">
-      <input placeholder="Parent name" required>
-      <input placeholder="Child's name &amp; age" required>
-      <input placeholder="Phone or email" required>
-      <textarea placeholder="What can we help with?" rows="3"></textarea>
+    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <input name="parent-name" placeholder="Parent name" required>
+      <input name="child-info" placeholder="Child's name &amp; age" required>
+      <input name="contact-info" placeholder="Phone or email" required>
+      <textarea name="message" placeholder="What can we help with?" rows="3"></textarea>
       <button type="submit">Request Appointment</button>
       <p class="form-msg" id="formMsg" hidden>Thanks! We'll be in touch shortly.</p>
     </form>

@@ -81,13 +81,21 @@ faqItems.forEach((item) => {
 });
 faqItems[0]?.classList.add('open');
 
-// Contact form
+// Contact form (submits to Netlify Forms via AJAX)
 const contactForm = document.getElementById('contactForm');
 const formMsg = document.getElementById('formMsg');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  formMsg.hidden = false;
-  contactForm.reset();
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(new FormData(contactForm)).toString(),
+  })
+    .then(() => {
+      formMsg.hidden = false;
+      contactForm.reset();
+    })
+    .catch((err) => console.error('Form submission failed', err));
 });
 
 // Scroll-pin cover: "Why Us" (#why) pins in place while "Meet Spark" (#spark)
