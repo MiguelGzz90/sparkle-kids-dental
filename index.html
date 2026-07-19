@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparkle Kids Dental — Healthy Smiles Start Here</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <span class="logo-badge"><span class="logo-dot"></span></span>
+    Sparkle Kids Dental
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#why">Why Us</a>
+    <a href="#spark">Meet Spark</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Stories</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="btn-pill btn-pill--fill">Book Appointment</a>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-sticky">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-headline" id="heroHeadline"></h1>
+        <p class="hero-sub" id="heroSub">Sparkle Kids Dental turns checkups into adventures — for kids who giggle, and parents who trust us.</p>
+        <div class="hero-cta" id="heroCta">
+          <a href="#contact" class="btn-pill btn-pill--fill">Book Appointment</a>
+          <a href="#spark" class="btn-pill btn-pill--outline">Meet Our Team</a>
+        </div>
+      </div>
+      <div class="hero-art" id="heroArt">
+        <div class="blob blob--yellow"></div>
+        <div class="blob blob--pink"></div>
+        <div class="img-placeholder img-placeholder--hero">Spark mascot — friendly dinosaur, toothbrush &amp; backpack, big smile</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="section">
+  <div class="section-head">
+    <div class="eyebrow">Why Parents Choose Us</div>
+    <h2 class="heading">A dental home your whole family will actually look forward to.</h2>
+  </div>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="icon-circle" style="background:#2F80ED"><span class="icon-dot"></span></span>
+      <div class="feature-title">Gentle Specialists</div>
+      <div class="feature-desc">Pediatric dentists trained to make every visit calm and kind.</div>
+    </div>
+    <div class="feature-card">
+      <span class="icon-circle" style="background:#6EDCC4"><span class="icon-dot"></span></span>
+      <div class="feature-title">Modern Technology</div>
+      <div class="feature-desc">Digital X-rays and painless tools built for little patients.</div>
+    </div>
+    <div class="feature-card">
+      <span class="icon-circle" style="background:#FFD54A"><span class="icon-dot"></span></span>
+      <div class="feature-title">Visits Kids Love</div>
+      <div class="feature-desc">Games, TVs on every chair, and a prize station after every checkup.</div>
+    </div>
+    <div class="feature-card">
+      <span class="icon-circle" style="background:#FF7A8A"><span class="icon-dot"></span></span>
+      <div class="feature-title">Flexible Scheduling</div>
+      <div class="feature-desc">Evening and weekend slots, plus same-day emergency care.</div>
+    </div>
+  </div>
+</section>
+
+<section id="spark" class="section section--spark">
+  <div class="blob blob--yellow blob--spark1"></div>
+  <div class="blob blob--pink blob--spark2"></div>
+  <div class="spark-inner">
+    <div class="img-placeholder img-placeholder--spark">Spark close-up — waving, holding toothbrush</div>
+    <div>
+      <div class="eyebrow">Meet Spark</div>
+      <h2 class="heading heading--sm">Our tiny dino teaches big smiles.</h2>
+      <p class="spark-copy">Spark shows up on every wall, workbook, and screen at Sparkle Kids — cheering kids on with simple brushing steps they'll actually remember. Tap a step to hear it in Spark's words.</p>
+      <div class="tips" id="tips">
+        <div class="tip" data-tip="0">
+          <span class="tip-badge">1</span>
+          <div>
+            <div class="tip-title">Wet &amp; Squeeze</div>
+            <div class="tip-text">Wet your brush and add a pea-size dab of toothpaste.</div>
+          </div>
+        </div>
+        <div class="tip" data-tip="1">
+          <span class="tip-badge">2</span>
+          <div>
+            <div class="tip-title">Circles, Not Scrubs</div>
+            <div class="tip-text">Small gentle circles on every tooth, front and back.</div>
+          </div>
+        </div>
+        <div class="tip" data-tip="2">
+          <span class="tip-badge">3</span>
+          <div>
+            <div class="tip-title">Two Minutes, Twice a Day</div>
+            <div class="tip-text">Brush for two full minutes, morning and night.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="section-head">
+    <div class="eyebrow">Services</div>
+    <h2 class="heading">Everything a growing smile needs, all in one office.</h2>
+  </div>
+  <div class="service-grid">
+    <div class="service-card">
+      <span class="service-icon service-icon--blue" style="--c:#2F80ED"><span class="icon-dot"></span></span>
+      <div class="feature-title">Pediatric Dentistry</div>
+      <div class="feature-desc">Complete oral care designed just for growing smiles.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--teal" style="--c:#6EDCC4"><span class="icon-dot"></span></span>
+      <div class="feature-title">First Dental Visit</div>
+      <div class="feature-desc">A gentle, judgment-free introduction to the dentist.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--yellow" style="--c:#FFD54A"><span class="icon-dot"></span></span>
+      <div class="feature-title">Preventive Care</div>
+      <div class="feature-desc">Checkups that catch small things before they grow.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--pink" style="--c:#FF7A8A"><span class="icon-dot"></span></span>
+      <div class="feature-title">Dental Cleanings</div>
+      <div class="feature-desc">Bright, comfortable cleanings kids actually enjoy.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--blue" style="--c:#2F80ED"><span class="icon-dot"></span></span>
+      <div class="feature-title">Fluoride Treatments</div>
+      <div class="feature-desc">Extra armor for developing teeth.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--teal" style="--c:#6EDCC4"><span class="icon-dot"></span></span>
+      <div class="feature-title">Sealants</div>
+      <div class="feature-desc">A protective shield against cavities on back teeth.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--yellow" style="--c:#FFD54A"><span class="icon-dot"></span></span>
+      <div class="feature-title">Tooth-Colored Fillings</div>
+      <div class="feature-desc">Repairs that blend right in, no metal in sight.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--pink" style="--c:#FF7A8A"><span class="icon-dot"></span></span>
+      <div class="feature-title">Emergency Dental Care</div>
+      <div class="feature-desc">Same-day appointments when accidents happen.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--blue" style="--c:#2F80ED"><span class="icon-dot"></span></span>
+      <div class="feature-title">Orthodontic Evaluations</div>
+      <div class="feature-desc">Early guidance for straighter smiles ahead.</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon service-icon--teal" style="--c:#6EDCC4"><span class="icon-dot"></span></span>
+      <div class="feature-title">Habit Counseling</div>
+      <div class="feature-desc">Friendly help with thumb-sucking and pacifier habits.</div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="section section--light">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="eyebrow">Testimonials</div>
+      <h2 class="heading">Parents notice the difference.</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">"My daughter asks to go back to the dentist. Never thought I would hear that."</div>
+        <div class="t-name">Maria G.</div>
+        <div class="t-kid">mom of Lily, 4</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">"The team turned checkups into the highlight of our week."</div>
+        <div class="t-name">David R.</div>
+        <div class="t-kid">dad of twins, 7</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">"Same-day care when he chipped a tooth. Calm, fast, and kind."</div>
+        <div class="t-name">Priya S.</div>
+        <div class="t-kid">mom of Arjun, 9</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="section-head">
+    <div class="eyebrow">Gallery</div>
+    <h2 class="heading">A space built for little patients, big smiles.</h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="img-placeholder img-placeholder--gal gal-1">Playful reception area</div>
+    <div class="img-placeholder img-placeholder--gal gal-2">Child laughing in treatment chair</div>
+    <div class="img-placeholder img-placeholder--gal gal-3">TV mounted above dental chair</div>
+    <div class="img-placeholder img-placeholder--gal gal-4">Smiling dentist with young patient</div>
+    <div class="img-placeholder img-placeholder--gal gal-5">Kids' interactive play corner</div>
+  </div>
+</section>
+
+<section id="faq" class="section section--spark">
+  <div class="faq-inner">
+    <div class="eyebrow" style="text-align:center">FAQ</div>
+    <h2 class="heading" style="text-align:center">Questions parents ask us most.</h2>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item" data-faq="0">
+        <div class="faq-row">
+          <div class="faq-q">When should my child have their first dental visit?</div>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">We recommend a first visit by their first birthday or within six months of their first tooth coming in.</div>
+      </div>
+      <div class="faq-item" data-faq="1">
+        <div class="faq-row">
+          <div class="faq-q">Do you take dental X-rays?</div>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Yes — digital X-rays only when needed, using the lowest radiation settings available for children.</div>
+      </div>
+      <div class="faq-item" data-faq="2">
+        <div class="faq-row">
+          <div class="faq-q">Do you accept insurance?</div>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">We work with most major dental insurance plans and offer flexible payment options.</div>
+      </div>
+      <div class="faq-item" data-faq="3">
+        <div class="faq-row">
+          <div class="faq-q">How often should my child see the dentist?</div>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Every six months for a checkup and cleaning, or sooner if we recommend closer monitoring.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="section-head">
+    <div class="eyebrow">Contact</div>
+    <h2 class="heading">Let's get your child smiling brighter.</h2>
+  </div>
+  <div class="contact-grid">
+    <form class="contact-form" id="contactForm">
+      <input placeholder="Parent name" required>
+      <input placeholder="Child's name &amp; age" required>
+      <input placeholder="Phone or email" required>
+      <textarea placeholder="What can we help with?" rows="3"></textarea>
+      <button type="submit">Request Appointment</button>
+      <p class="form-msg" id="formMsg" hidden>Thanks! We'll be in touch shortly.</p>
+    </form>
+    <div>
+      <div class="img-placeholder img-placeholder--map">Map — 123 Sunshine Ave, Brightview</div>
+      <div class="contact-info">
+        <div><strong>Address</strong> — 123 Sunshine Ave, Brightview</div>
+        <div><strong>Phone</strong> — (555) 010-2323</div>
+        <div><strong>Hours</strong> — Mon–Fri 8am–6pm, Sat 9am–2pm</div>
+        <div><strong>Emergencies</strong> — Same-day appointments available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-brand">Sparkle Kids Dental</div>
+  <div class="footer-tag">Healthy Smiles Start Here.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
